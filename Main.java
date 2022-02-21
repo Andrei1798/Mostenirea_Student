@@ -6,24 +6,23 @@ public class Main {
         System.out.println("Cati Studenti doriti sa introduceti ?");
         System.err.print("> ");
         int num = rNum.nextInt();
-        Student[] students = new Student[num];
-        for (int i = 0; i < num; i++) {
+        Student[] students = ne ; i++) {
             System.out.println();
-            System.out.print("Numele : ");
+            System.out.print("N umele : ");
             String name = rText.nextLine();
-            System.out.print("Prenumele : ");
-            String lastname = rText.nextLine();
+            System.out.print("Pr enumele : ");
+            String lastname =  rText.nextLine();
             System.out.print("Varsta : ");
-            int age = rNum.nextInt();
+            int age = rNum.nextI nt();
             System.out.print("Facultatea : ");
             String faculty = rText.nextLine();
             System.out.print("Nr matricol : ");
-            String num_matrix = rText.nextLine();
+            String num_matrix = rText.ne xtLine();
 
             students[i] = new Student(name, lastname, age, faculty, num_matrix);
         }
         int c = 0;
-        for (int i = 0; i < students.length; i++) {
+        for (int i = 0; i < students.length ; i++) {
             String currentName = students[i].getName();
             System.out.println(students[i].getName());
             System.out.println(students[i].getLastname());
